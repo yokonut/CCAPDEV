@@ -1,4 +1,4 @@
-body {
+.login-register {
   font-family: Arial, sans-serif;
   background-color: white;
   display: flex;
@@ -15,9 +15,37 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
 }
 
+
+.index-body h1 {
+  background-color: rgba(31, 129, 11, 0.582);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+}
+
+
+.index-body nav {
+  background-color: rgba(31, 129, 11, 0.582);
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+}
+
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.index-body h2 {
+  text-align: right;
+}
+
+.index-body nav {
+  text-align: center;
+}
+
+.links {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .dropme {
@@ -60,3 +88,4 @@ body {
   text-align: center;
   font-size: 0.9em;
 }
+
