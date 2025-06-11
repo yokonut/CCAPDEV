@@ -12,22 +12,49 @@
   padding: 30px;
   border-radius: 35px;
   width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
 }
 
-
-.index-body h1 {
-  background-color: rgba(31, 129, 11, 0.582);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+* {
+  margin: 0;
+  padding: 0;
 }
 
+.header-bar {
+  display: flex;
+}
 
-.index-body nav {
-  background-color: rgba(31, 129, 11, 0.582);
-  padding: 30px;
+.top-part {
+  background-color: #000000;
+}
+
+#top {
+  margin-left: 50px;
+  color: white;
+}
+
+.header-bar nav {
+  box-shadow: 0 0 5px;
+  width: 150px;
+  height: 250px;
   border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+  background-color: rgba(255, 255, 255, 0.603);
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.header-bar h2 {
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.main-table {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-left: 400px;
+  border: 10px solid rgb(192, 15, 15);
 }
 
 .form-container h2 {
@@ -35,17 +62,9 @@
   margin-bottom: 20px;
 }
 
-.index-body h2 {
-  text-align: right;
-}
-
-.index-body nav {
-  text-align: center;
-}
-
-.links {
+.header-bar a {
   display: block;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .dropme {
@@ -88,4 +107,3 @@
   text-align: center;
   font-size: 0.9em;
 }
-
