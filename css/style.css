@@ -1,6 +1,6 @@
 .login-register {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.849);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .form-container {
-  background-color: white;
+  background-color: rgb(94, 94, 93);
   padding: 30px;
   border-radius: 35px;
   width: 300px;
@@ -52,7 +52,7 @@
   padding: 10px;
   background-color: #007bff;
   border: none;
-  color: white;
+  color: rgb(94, 94, 93);
   border-radius: 5px;
   cursor: pointer;
 }
