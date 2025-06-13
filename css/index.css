@@ -1,3 +1,9 @@
+:root {
+  --Mainclr: #364b46;
+  --Subclr: #7EAE96
+  --BGclr: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;

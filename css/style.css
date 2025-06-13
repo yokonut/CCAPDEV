@@ -1,3 +1,9 @@
+:root {
+  --Mainclr: #7EAE96
+  --BGclr: #FFFFFF
+}
+
+
 .login-register {
   font-family: Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.849);
