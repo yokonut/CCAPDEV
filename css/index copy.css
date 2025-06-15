@@ -6,15 +6,25 @@
   font-family: "Roboto", sans-serif;
 }
 
+@font-face {
+  font-family: TitleFont;
+  src: url(data/Wilker.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Tahoma;
+}
+
+a{
+  text-decoration: none;
 }
 
 .title-color {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: var(--Mainclr);
   border-bottom: 3px solid darkslategray;
   margin: auto;
@@ -35,7 +45,8 @@
   margin-bottom: auto;
   font-size: 32px;
   font-weight: bold;
-  font-style: italic;
+  color:#FFFFFF;
+  font-family: Cambria;
 }
 
 body {
@@ -60,8 +71,38 @@ body {
   margin: 30px auto;      /* centers horizontally */
   background-color: rgb(94, 94, 93);
   box-shadow: 0 0 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box > div{
+  width: 60px;
+  height: 60px;
+  background-image: url("../data/computer-sprite.png");
+  background-size: 100% 100%;
+  display:block;
+}   
+
+.box #reserved{ /*Change to red when the computer is reserved*/
+  background-image: url("../data/red.png");
+}
+
+.box #in-use{ /*Change to red when the computer is reserved*/
+  background-image: url("../data/green.png");
+}
+
+.box > div > div{
+  margin-left: 16px;
+  padding-top: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px gray;
+  font-family: "Courier New";
 }
 
 .box img {
@@ -69,12 +110,25 @@ body {
   height: 60px;
 }
 
+.links nav div{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+  border-radius: 10px;
+}
 
 .links a {
   display: block;
-  margin: 15px;
-  padding: 1px;
   text-align: center;
+  color: black;
+}
+
+#currentlyhere{
+  background-color: #364B46;
+}
+
+#currentlyhere a{
+  color: white;
 }
 
 .links nav {
@@ -85,12 +139,11 @@ body {
   min-height: 200px;        /* limit width on large screens */
                             /* instead of hardcoded height */
   
-  border-radius: 5px;
+  border-radius: 10px;
   border-right: 3px inset var(--Mainclr);
   border-bottom: 3px inset var(--Mainclr);
   margin-top: 20px;
   margin-left: 20px;        /* centers it horizontally */
-  padding: 4px;
 
   font-weight: bold;
   font-size: 1rem;
@@ -106,8 +159,9 @@ body {
   min-width: 150px;
   min-height: 200px;
   background-color: var(--Subclr);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   border-right: 3px inset var(--Mainclr);
   border-bottom: 3px inset var(--Mainclr);
 }
+
