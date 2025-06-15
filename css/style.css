@@ -55,7 +55,7 @@
   border: 1px solid #000000;
 }
 
-.form-container #login-button {
+.form-container button {
   width: 50%;
   padding: 10px;
   background-color: #007bff;
@@ -67,9 +67,10 @@
   font-size: 0.9em;
   
   margin-left: 25%;
+  margin-bottom: 10px;
 }
 
-.form-container #login-button:hover {
+.form-container button:hover {
   background-color: #0056b3;
 }
 
