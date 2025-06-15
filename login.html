@@ -4,12 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <title>Login</title>
+  <link rel="stylesheet" href="css/main_style.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
 </head>
 
-<body class="login-register">
-  <div class="form-container">
+<body >
+<div class="title-color">
+    <img src="data/Logo.png">
+    <h2 id="title">LS Lab Reservation</h2>
+  </div>
+<div class="login-register">
+  
+  <div class="form-container"><div>
     <h2>Login</h2>
     <form id="login-form" action="#" method="post">
       <label class="dropme" for="email">DLSU Email</label>
@@ -18,10 +25,7 @@
       <label class="dropme" for="password">Password</label>
       <input class="dropme-input" type="password" id="password" name="password" required />
 
-      <label for="remember">Remember Me</label>
-      <input type="checkbox" id="remember" name="remember" />
-
-      <button type="submit">Log In</button>
+      <button id="login-button" type="submit">Log In</button>
     </form>
 
     <div class="after-form">
@@ -29,7 +33,8 @@
       <input type="checkbox" id="remember" name="remember" />
       <p>Don't have an account? <a href="register.html">Register here</a></p>
     </div>
-  </div>
+  </div></div>
+</div>
 </body>
 
 </html>
