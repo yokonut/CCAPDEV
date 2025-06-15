@@ -66,3 +66,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateSeatStatus("1");
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const users = [
+    { username: "yohan_ko@dlsu.edu.ph", password: "pass123" },
+    { username: "marinas_carl@dlsu.edu.ph", password: "abc456" },
+    { username: "aglugub_jerome@dlsu.edu.ph", password: "hello789" },
+    { username: "mansukhani_asanro@dlsu.edu.ph", password: "markzuckerburg" },
+    { username: "barbaso_dean@dlsu.edu.ph", password: "noyourenot" }
+  ];
+
+  const loginForm = document.getElementById("login-form");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const foundUser = users.find(
+        (user) => user.username === email && user.password === password
+      );
+
+      if (foundUser) {
+        alert("Login successful!");
+        sessionStorage.setItem("currentUser", foundUser.username);
+        window.location.href = "index copy.html"; // redirect after login
+      } else {
+        alert("Invalid email or password.");
+      }
+    });
+  }
+});

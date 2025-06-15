@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class = "login-register">
-    <div class="form-container">
-      <h2>Login</h2>
-      <form action="#" method="post">
-        <label class="dropme" for="email">DLSU Email</label>
-        <input
-          class="dropme-input"
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
 
-        <label class="dropme" for="password">Password</label>
-        <input
-          class="dropme-input"
-          type="password"
-          id="password"
-          name="password"
-          required
-        />
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
 
-      <div class="after-form">
-        <label for="remember">Remember Me</label>
-        <input type="checkbox" id="remember" name="remember" />
-        <button type="submit">Log In</button>
-        <p>Don't have an account? <a href="register.html">Register here</a></p>
-      </div>
+<body class="login-register">
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="login-form" action="#" method="post">
+      <label class="dropme" for="email">DLSU Email</label>
+      <input class="dropme-input" type="email" id="email" name="email" required />
+
+      <label class="dropme" for="password">Password</label>
+      <input class="dropme-input" type="password" id="password" name="password" required />
+
+      <label for="remember">Remember Me</label>
+      <input type="checkbox" id="remember" name="remember" />
+
+      <button type="submit">Log In</button>
+    </form>
+
+    <div class="after-form">
+      <label for="remember">Remember Me</label>
+      <input type="checkbox" id="remember" name="remember" />
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
