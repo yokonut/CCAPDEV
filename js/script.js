@@ -41,15 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
       seat.onclick = null; // Remove old click listeners
 
       const seatNumber = i + 1;
-
+      let temp = seat.children;
       if (reserved.includes(seatNumber)) {
         seat.id = "reserved";
-        let temp = seat.children;
-        temp[1].innerHTML = "Test"
+        
+        temp[1].innerHTML = "<a href='profile.html'>@anon</a>";
       } else if (inUse.includes(seatNumber)) {
         seat.id = "in-use";
+        temp[1].innerHTML = "Occupied";
       } else {
         // Seat is available
+        temp[1].innerHTML = "";
         seat.classList.add("selectable");
         seat.onclick = () => {
           seat.classList.toggle("selected");
