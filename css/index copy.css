@@ -78,8 +78,8 @@ body {
 }
 
 .box > div{
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   background-image: url("../data/computer-sprite.png");
   background-size: 100% 100%;
   display:block;
@@ -94,13 +94,13 @@ body {
 }
 
 .box > div > div{
-  margin-left: 16px;
-  padding-top: 10px;
-  width: 40px;
-  height: 40px;
+  padding-top: 18%;
+  margin-left:auto;
+  width: 80%;
+  height: 66%;
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 4vh;
   text-shadow: 1px 1px gray;
   font-family: "Courier New";
 }
