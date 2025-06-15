@@ -20,6 +20,32 @@
 a{
   text-decoration: none;
 }
+#reserve-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reserve-button:hover {
+  background-color: mediumseagreen;
+}
+
+
+
+.selectable:hover {
+  background-color: #90ee90;
+}
+
+.selected {
+  background-color: dodgerblue !important;
+  color: white;
+}
+
 
 .title-color {
   display: flex;
@@ -69,7 +95,7 @@ body {
   width: 90%;             /* responsive */
   max-width: 1000px;      /* keeps it from being too wide */
   margin: 30px auto;      /* centers horizontally */
-  background-color: rgb(94, 94, 93);
+  background-color: rgb(253, 253, 253);
   box-shadow: 0 0 10px;
   border-radius: 10px;
   padding: 20px;
