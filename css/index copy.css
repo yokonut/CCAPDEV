@@ -1,27 +1,3 @@
-:root {
-  --Mainclr: #364b46;
-  --Subclr: #7EAE96;
-  --BGclr: #FFFFFF;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-@font-face {
-  font-family: TitleFont;
-  src: url(data/Wilker.otf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Tahoma;
-}
-
-a{
-  text-decoration: none;
-}
-
-
 .selectable:hover {
   background-color: #90ee90;
 }
@@ -29,39 +5,6 @@ a{
 .selected {
   background-color: dodgerblue !important;
   color: white;
-}
-
-
-.title-color {
-  display: flex;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: var(--Mainclr);
-  border-bottom: 3px solid darkslategray;
-  margin: auto;
-}
-
-.title-color img{
-  margin-left: 15px;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-#title {
-  margin-left: 15px;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 32px;
-  font-weight: bold;
-  color:#FFFFFF;
-  font-family: Cambria;
-}
-
-body {
-  background-color: var(--BGclr);
 }
 
 .links {
@@ -104,16 +47,25 @@ body {
   background-image: url("../data/green.png");
 }
 
-.box > div > div{
+.box > div > .number{
   padding-top: 18%;
   margin-left:auto;
   width: 80%;
-  height: 66%;
+  height: 52%;
   text-align: center;
   color: white;
   font-size: 4vh;
   text-shadow: 1px 1px gray;
   font-family: "Courier New";
+}
+
+.box > div > .name{ 
+  width: 80%;
+  text-align: center;
+  margin-left:auto;
+  font-size: 2vh;
+  color: black;
+  text-shadow: 1px 1px white;
 }
 
 .box img {

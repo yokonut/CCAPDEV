@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (reserved.includes(seatNumber)) {
         seat.id = "reserved";
+        let temp = seat.children;
+        temp[1].innerHTML = "Test"
       } else if (inUse.includes(seatNumber)) {
         seat.id = "in-use";
       } else {
