@@ -20,21 +20,6 @@
 a{
   text-decoration: none;
 }
-#reserve-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: seagreen;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#reserve-button:hover {
-  background-color: mediumseagreen;
-}
-
 
 
 .selectable:hover {
@@ -190,4 +175,35 @@ body {
   border-right: 3px inset var(--Mainclr);
   border-bottom: 3px inset var(--Mainclr);
 }
+
+.box-buttons{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.box-buttons button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box-buttons #Clear{
+  background-color: #6A8977;
+}
+
+.box-buttons button:hover {
+  background-color: mediumseagreen;
+}
+
+.box-buttons #Clear:hover{
+  background-color: mediumseagreen;
+}
+
+
 
