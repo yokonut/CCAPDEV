@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
 :root {
   --Mainclr: #364b46;
   --Subclr: #7EAE96;
   --BGclr: #EEEEEE;
   font-size: 16px;
-}
-
-.noto-sans-mono-<uniquifier> {
   font-family: "Noto Sans Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
