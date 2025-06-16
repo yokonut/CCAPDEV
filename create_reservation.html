@@ -10,49 +10,50 @@
   <link rel="stylesheet" href="css/index copy.css" />
   <script src="js/script.js" defer></script>
 
+  <style>                                                                                           /* Include this in head of all html files */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');   /* Include this in head of all html files */
+  </style>                                                                                                                                    
+
 
 </head>
 
 <body>
   <div class="title-color">
     <img src="data/Logo.png">
-    <h2 id="title">LS Lab Reservation</h2>
+    <h2 id="title">LS Lab Reservations</h2>
   </div>
   <div class="links">
     <div class="left-tab">
       <nav>
+        <div>
+          <a href="home.html">Home</a>
+        </div>
         <div id="currentlyhere">
-          <a href="index.html">Home</a>
+          <a href="create_reservation.html">Create Reservation</a>
+        </div>
+        <div>
+          <a href="view_reservation.html">View Reservations</a>
+        </div>
+        <div>
+          <a href="edit_reservation.html">Edit Reservations</a>
+        </div>
+        <div>
+          <a href="profile.html">View Profile</a>
+        </div>
+        <div>
+          <a href="search_profile.html">Search Profiles</a>
         </div>
         <div>
           <a href="login.html">Login</a>
         </div>
         <div>
           <a href="register.html">Register</a>
-        </div>
-
-        <div>
-          <a href="profile.html">Profile</a>
-        </div>
-        <div>
-          <a>Edit Reservations</a>
-        </div>
-        <div>
-          <a>View Reservations</a>
-        </div>
-        <div>
-          <a>View Profile</a>
-        </div>
-        <div>
-          <a>Search Profiles</a>
-        </div>
-
       </nav>
     </div>
 
     <div class="table">
       <h2>Seat reservation</h2>
-      Date: <input type="date">
+      Date: <input type="date"> <br><br>    <!-- added breakline -->
       <label><input type="radio" name="lab" value="1" checked> Lab 1</label>
       <label><input type="radio" name="lab" value="2"> Lab 2</label>
       <label><input type="radio" name="lab" value="3"> Lab 3</label>
