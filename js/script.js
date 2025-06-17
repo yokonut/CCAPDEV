@@ -117,3 +117,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const currentUser = sessionStorage.getItem("currentUser");
+  const authLink = document.getElementById("auth-link");
+
+  if (authLink) {
+    if (currentUser) {
+      // Change to logout
+      authLink.textContent = "Logout";
+      authLink.href = "#";
+      authLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        sessionStorage.removeItem("currentUser"); // log out
+        alert("You have been logged out.");
+        window.location.href = "index.html"; // or reload page
+      });
+    } else {
+      // Keep it as login
+      authLink.textContent = "Login";
+      authLink.href = "login.html";
+    }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dateInput = document.getElementById("reservation-date");
+  if (dateInput) {
+    const today = new Date().toISOString().split("T")[0]; // format: YYYY-MM-DD
+    dateInput.value = today;
+  }
+});
+
+
