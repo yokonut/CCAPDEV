@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-.box > div{
+.box > .computer{
   width: 90px;
   height: 90px;
   background-image: url("../data/computer-sprite.png");
@@ -47,7 +47,7 @@
   background-image: url("../data/green.png");
 }
 
-.box > div > .number{
+.box > .computer > .number{
   padding-top: 18%;
   margin-left:auto;
   width: 80%;
@@ -59,7 +59,7 @@
   font-family: "Courier New";
 }
 
-.box > div > .name{ 
+.box > .computer > .name{ 
   width: 80%;
   text-align: center;
   margin-left:auto;
@@ -157,5 +157,49 @@
   background-color: mediumseagreen;
 }
 
+#view_box{
+  width: 95%;             /* responsive */
+  max-width: 5000px; 
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.view_slide {
+  border: 1px red solid;
+  width: 47.5%;
+  background-color: var(--Subclr);;
+  border-radius: 10px;
+}
+
+.view_slide_top{
+  margin: 10px;
+}
+
+.view_slide_bottom{
+  margin: 10px;
+  margin-top:0px;
+  border:1px red solid;
+}
+
+.view_slide_bottom > .box{
+  margin: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pfp{
+  background-color: var(--Mainclr);;
+  width: 60px;
+}
+
+.pfp img{
+  width:60px;
+  height:60px;
+  
+}
 
 
