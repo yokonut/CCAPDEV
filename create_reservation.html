@@ -48,12 +48,52 @@
 
     <div class="table">
       <h2>Seat reservation</h2>
-      Date: <input type="date"> <br><br>    <!-- added breakline -->
+      Date: <input type="date"><br>  
+      <label for="start_time">Start Time:</label>
+      <select name="start_time" id="start_time">
+        <option value="0900">9:00 AM</option>
+        <option value="0930">9:30 AM</option>
+        <option value="1000">10:00 AM</option>
+        <option value="1030">10:30 AM</option>
+        <option value="1100">11:00 AM</option>
+        <option value="1130">11:30 AM</option>
+        <option value="1200">12:00 PM</option>
+        <option value="1230">12:30 PM</option>
+        <option value="1300">01:00 PM</option>
+        <option value="1330">01:30 PM</option>
+        <option value="1400">02:00 PM</option>
+        <option value="1430">02:30 PM</option>
+        <option value="1500">03:00 PM</option>
+        <option value="1530">03:30 PM</option>
+        <option value="1600">04:00 PM</option>
+      </select>  
+      <label for="start_time">   End Time:</label>
+      <select name="start_time" id="start_time">
+        <option value="0900">9:00 AM</option>
+        <option value="0930">9:30 AM</option>
+        <option value="1000">10:00 AM</option>
+        <option value="1030">10:30 AM</option>
+        <option value="1100">11:00 AM</option>
+        <option value="1130">11:30 AM</option>
+        <option value="1200">12:00 PM</option>
+        <option value="1230">12:30 PM</option>
+        <option value="1300">01:00 PM</option>
+        <option value="1330">01:30 PM</option>
+        <option value="1400">02:00 PM</option>
+        <option value="1430">02:30 PM</option>
+        <option value="1500">03:00 PM</option>
+        <option value="1530">03:30 PM</option>
+        <option value="1600">04:00 PM</option>
+      </select> 
+      <br><br>    <!-- added breakline -->
       <label><input type="radio" name="lab" value="1" checked> Lab 1</label>
       <label><input type="radio" name="lab" value="2"> Lab 2</label>
       <label><input type="radio" name="lab" value="3"> Lab 3</label>
       <label><input type="radio" name="lab" value="4"> Lab 4</label>
       <label><input type="radio" name="lab" value="5"> Lab 5</label>
+      <br><br>
+
+      <label><input type="checkbox" name="anon" value="1">      Are you reserving anonymously? </label>
       <div class="box">
           <div>
             <div class="number">1</div>
