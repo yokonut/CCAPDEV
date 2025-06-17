@@ -39,11 +39,11 @@
   display:block;
 }   
 
-.box #reserved{ /*Change to red when the computer is reserved*/
+.box #reserved{ 
   background-image: url("../data/red.png");
 }
 
-.box #in-use{ /*Change to red when the computer is reserved*/
+.box #in-use{ 
   background-image: url("../data/green.png");
 }
 
@@ -53,7 +53,7 @@
   width: 80%;
   height: 52%;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 4vh;
   text-shadow: 1px 1px gray;
   font-family: "Courier New";
@@ -114,9 +114,7 @@
 
 
 .table {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   width: 90%;
   height: 60%;
   min-width: 150px;

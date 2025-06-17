@@ -96,10 +96,56 @@ document.addEventListener("DOMContentLoaded", () => {
       if (foundUser) {
         alert("Login successful!");
         sessionStorage.setItem("currentUser", foundUser.username);
-        window.location.href = "index copy.html"; // redirect after login
+        window.location.href = "index.html"; 
       } else {
         alert("Invalid email or password.");
       }
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const welcomeElement = document.getElementById("welcome-message");
+  const currentUser = sessionStorage.getItem("currentUser");
+
+  if (welcomeElement && currentUser) {
+    // Extract first name from email (before underscore)
+    const firstNamePart = currentUser.split("_")[0];
+    const firstName = firstNamePart.charAt(0).toUpperCase() + firstNamePart.slice(1);
+
+    welcomeElement.textContent = `Welcome to the LabRes System, ${firstName}!`;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentUser = sessionStorage.getItem("currentUser");
+  const authLink = document.getElementById("auth-link");
+
+  if (authLink) {
+    if (currentUser) {
+      // Change to logout
+      authLink.textContent = "Logout";
+      authLink.href = "#";
+      authLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        sessionStorage.removeItem("currentUser"); // log out
+        alert("You have been logged out.");
+        window.location.href = "index.html"; // or reload page
+      });
+    } else {
+      // Keep it as login
+      authLink.textContent = "Login";
+      authLink.href = "login.html";
+    }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dateInput = document.getElementById("reservation-date");
+  if (dateInput) {
+    const today = new Date().toISOString().split("T")[0]; // format: YYYY-MM-DD
+    dateInput.value = today;
+  }
+});
+
+

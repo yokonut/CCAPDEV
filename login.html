@@ -9,32 +9,36 @@
   <script src="js/script.js" defer></script>
 </head>
 
-<body >
-<div class="title-color">
-    <img src="data/Logo.png">
-    <h2 id="title">LS Lab Reservation</h2>
+<body>
+  <div class="title-color">
+    <a href="index.html">
+      <img src="data/Logo.png" alt="LabRes Logo">
+    </a>
+    <h2 id="title">LS Lab Reservations</h2>
   </div>
-<div class="login-register">
-  
-  <div class="form-container"><div>
-    <h2>Login</h2>
-    <form id="login-form" action="#" method="post">
-      <label class="dropme" for="email">DLSU Email</label>
-      <input class="dropme-input" type="email" id="email" name="email" required />
+  <div class="login-register">
 
-      <label class="dropme" for="password">Password</label>
-      <input class="dropme-input" type="password" id="password" name="password" required />
+    <div class="form-container">
+      <div>
+        <h2>Login</h2>
+        <form id="login-form" action="#" method="post">
+          <label class="dropme" for="email">DLSU Email</label>
+          <input class="dropme-input" type="email" id="email" name="email" required />
 
-      <button id="login-button" type="submit">Log In</button>
-    </form>
+          <label class="dropme" for="password">Password</label>
+          <input class="dropme-input" type="password" id="password" name="password" required />
 
-    <div class="after-form">
-      <label for="remember">Remember Me</label>
-      <input type="checkbox" id="remember" name="remember" />
-      <p>Don't have an account? <a href="register.html">Register here</a></p>
+          <button id="login-button" type="submit">Log In</button>
+        </form>
+
+        <div class="after-form">
+          <label for="remember">Remember Me</label>
+          <input type="checkbox" id="remember" name="remember" />
+          <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+      </div>
     </div>
-  </div></div>
-</div>
+  </div>
 </body>
 
 </html>
