@@ -103,3 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const welcomeElement = document.getElementById("welcome-message");
+  const currentUser = sessionStorage.getItem("currentUser");
+
+  if (welcomeElement && currentUser) {
+    // Extract first name from email (before underscore)
+    const firstNamePart = currentUser.split("_")[0];
+    const firstName = firstNamePart.charAt(0).toUpperCase() + firstNamePart.slice(1);
+
+    welcomeElement.textContent = `Welcome to the LabRes System, ${firstName}!`;
+  }
+});
+
