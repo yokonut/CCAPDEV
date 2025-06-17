@@ -174,6 +174,11 @@
 
 .view_slide_top{
   margin: 10px;
+  display: flex;
+}
+
+.reservation_description{
+  margin:5px;
 }
 
 .view_slide_bottom{
@@ -191,13 +196,17 @@
 
 .pfp{
   background-color: var(--Mainclr);;
-  width: 60px;
+  width: 90px;
 }
 
 .pfp img{
-  width:60px;
-  height:60px;
+  width:90px;
+  height:90px;
   
 }
 
+.box p{
+  width:100%;
+  margin-left: 10px;
+}
 
