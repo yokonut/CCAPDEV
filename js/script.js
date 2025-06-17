@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (foundUser) {
         alert("Login successful!");
         sessionStorage.setItem("currentUser", foundUser.username);
-        window.location.href = "index copy.html"; // redirect after login
+        window.location.href = "index.html"; 
       } else {
         alert("Invalid email or password.");
       }
