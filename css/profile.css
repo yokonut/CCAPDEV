@@ -39,12 +39,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-
-}
-
-.header > h2{
-    color:black;
-    width:100%;
 }
 
 .profile-pic{
@@ -70,12 +64,21 @@
     justify-content: space-evenly;
 }
 
+.edit{
+    cursor: pointer;
+    border: none;
+    width: auto;
+    height: 30px;
+    max-width: auto;ku
+    background-size: 100% 100%;
+}
+
 .samplebox{
     display: flex;
     background-color: #ADEBB3;
     height: auto;
     width: auto;
-    max-width: 100%;
+    max-width: 80%;
     max-height: 300px;
     justify-content: center;
     align-items: center;
@@ -83,4 +86,5 @@
     border-radius: 10px;
     border: 2px solid #364b46;
     padding: 1vmax;
+    flex-wrap: wrap;
 }
