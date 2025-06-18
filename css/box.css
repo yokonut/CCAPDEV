@@ -1,7 +1,7 @@
 .box {
-  width: 90%;             /* responsive */
-  max-width: 1000px;      /* keeps it from being too wide */
-  margin: 30px auto;      /* centers horizontally */
+  width: 90%; /* responsive */
+  max-width: 1000px; /* keeps it from being too wide */
+  margin: 30px auto; /* centers horizontally */
   background-color: rgb(253, 253, 253);
   box-shadow: 0 0 10px;
   border-radius: 10px;
@@ -10,25 +10,25 @@
   flex-wrap: wrap;
 }
 
-.box > .computer{
+.box > .computer {
   width: 90px;
   height: 90px;
   background-image: url("../data/computer-sprite.png");
   background-size: 100% 100%;
-  display:block;
-}   
+  display: block;
+}
 
-.box #reserved{ 
+.box #reserved {
   background-image: url("../data/red.png");
 }
 
-.box #in-use{ 
+.box #in-use {
   background-image: url("../data/green.png");
 }
 
-.box > .computer > .number{
+.box > .computer > .number {
   padding-top: 18%;
-  margin-left:auto;
+  margin-left: auto;
   width: 80%;
   height: 52%;
   text-align: center;
@@ -38,10 +38,10 @@
   font-family: "Courier New";
 }
 
-.box > .computer > .name{ 
+.box > .computer > .name {
   width: 80%;
   text-align: center;
-  margin-left:auto;
+  margin-left: auto;
   font-size: 2vh;
   color: black;
   text-shadow: 1px 1px white;
@@ -52,7 +52,7 @@
   height: 60px;
 }
 
-.box-buttons{
+.box-buttons {
   display: flex;
   justify-content: flex-end;
   width: 90%;
@@ -69,15 +69,15 @@
   cursor: pointer;
 }
 
-.box-buttons #Clear{
-  background-color: #6A8977;
+.box-buttons #Clear {
+  background-color: #6a8977;
 }
 
-.box-buttons #Delete{
+.box-buttons #Delete {
   background-color: red;
 }
 
-.box-buttons #Delete:hover{
+.box-buttons #Delete:hover {
   background-color: darkred;
 }
 
@@ -85,7 +85,7 @@
   background-color: mediumseagreen;
 }
 
-.box-buttons #Clear:hover{
+.box-buttons #Clear:hover {
   background-color: mediumseagreen;
 }
 
@@ -98,10 +98,10 @@
   color: white;
 }
 
-#view_box{
-  width: 95%;             /* responsive */
-  max-width: 5000px; 
-  display:flex;
+#view_box {
+  width: 95%; /* responsive */
+  max-width: 5000px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-left: 0;
@@ -110,57 +110,55 @@
 
 .view_slide {
   width: 47.5%;
-  background-color: var(--Subclr);;
+  background-color: var(--Subclr);
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.view_slide_top{
+.view_slide_top {
   margin: 10px;
   display: flex;
 }
 
-.reservation_description{
-  margin:5px;
+.reservation_description {
+  margin: 5px;
   width: 75%;
 }
 
-.reservation_options{
+.reservation_options {
   width: 30px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.reservation_options img{
-  width:30px;
-  height:30px;
+.reservation_options img {
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   align-self: flex-start;
 }
 
-.reservation_options img:hover{
+.reservation_options img:hover {
   background-color: var(--Mainclr);
 }
 
-
-
-.view_slide_bottom{
+.view_slide_bottom {
   margin: 10px;
-  margin-top:0px;
+  margin-top: 0px;
 }
 
-.view_slide_bottom > .box{
+.view_slide_bottom > .box {
   margin: 0px;
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.view_slide_bottom > span{
+.view_slide_bottom > span {
   font-size: 1.5em;
   text-align: end;
-  margin-right:10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row-reverse;
   font-weight: bold;
@@ -168,78 +166,78 @@
 }
 
 .view_slide_bottom > .approved {
-  color:GREEN;
+  color: GREEN;
 }
 
 .view_slide_bottom > .pending {
-  color:LIGHTGREY;
+  color: LIGHTGREY;
 }
 
-
-.view_slide_bottom > .denied{
-  color:RED;
+.view_slide_bottom > .denied {
+  color: RED;
 }
 
-.pfp{
+.pfp {
   margin: auto;
   background-size: 100% 100%;
   width: 90px;
-  border-radius:10px;
+  border-radius: 10px;
   text-align: center;
   flex-direction: column;
   border-radius: 10px;
 }
 
-.pfp .pfp_image{
-  width:90px;
-  height:90px;
+.pfp .pfp_image {
+  width: 90px;
+  height: 90px;
 }
 
-.pfp p{
+.pfp p {
   font-size: 15px;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px rgb(0, 0, 0);
-  margin-top:auto;
+  margin-top: auto;
   align-self: flex-end;
   padding-top: 65px;
 }
 
-.pfp p:hover{
-  color:lightblue;
+.pfp p:hover {
+  color: lightblue;
 }
 
-.box > p{
-  width:100%;
+.box > p {
+  width: 100%;
   margin-left: 10px;
   font-size: 15px;
   font-weight: bold;
 }
 
-#PiiPoo{
-    background-image: url("../data/PiiPoo.png");
-    background-size: 100% 100%;
-  
+#PiiPoo {
+  background-image: url("../data/PiiPoo.png");
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 
-#abc456{
-    background-image: url("../data/abc456.png");
-    background-size: 100% 100%;
-  
+#abc456 {
+  background-image: url("../data/abc456.png");
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 
-#xyz123{
-    background-image: url("../data/xyz123.png");
-    background-size: 100% 100%;
-
+#xyz123 {
+  background-image: url("../data/xyz123.png");
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 
-#BirdUp{
-    background-image: url("../data/BirdUp.png");
-    background-size: 100% 100%;
-   
+#BirdUp {
+  background-image: url("../data/BirdUp.png");
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
 
-#Someone{
-    background-image: url("../data/Someone.png");
-    background-size: 100% 100%;
+#Someone {
+  background-image: url("../data/Someone.png");
+  background-size: 100% 100%;
+  border-radius: 5%;
 }
