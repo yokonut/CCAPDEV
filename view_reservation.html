@@ -51,23 +51,62 @@
 
     <div class="table">
       <h2>Hello Admins!<br>Viewing Reservations</h2>
+
+      <label for="sortby">Sort By:</label>
+      <select name="sortby" id="sortby">
+        <option>User Name</option>
+        <option>Laboratory</option>
+        <option>Date Made</option>
+        <option>Date Reserved</option>
+        <option>Approval Type</option>
+      </select>  
+      <select name="asc" id="asc">
+        <option>Ascending</option>
+        <option>Descending</option>
+      </select> 
+      <br><br>
+      Looking for:<br>
+      <label for="name">Username: </label>
+      <input name="name" type="text"><br>
+      <label >Lab: </label>
+      <select name="asc" id="asc">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select> 
+      <label>PC No.: </label>
+      <input name="name" type="text"><br>
+      <br>
+      <label><input type="checkbox" name="anon" value="1">Pending</label>
+      <label><input type="checkbox" name="anon" value="1">Approved</label>
+      <label><input type="checkbox" name="anon" value="1">Denied</label>
+
+      <br><br>
+
+      <label><input type="checkbox" name="anon" value="1">10 Minutes Late to Reservation Time</label>
+      <hr>
+      
       <div class="box" id="view_box">
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_abc456.html">
                   <div id="abc456" class="pfp_image" >
                     <p>abc456</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made a reservation<br>
+                abc456 made a reservation<br>
                 on June 17 2025 6:48 PM For Laboratory #5<br>
                 Reserving the computers 7,8,9<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
+                <img src="data/check.png">
+                <img src="data/cross.png">
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -94,19 +133,20 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_abc456.html">
                   <div id="abc456" class="pfp_image">
                     <p>abc456</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made an anonymous reservation<br>
+                abc456 made a reservation<br>
                 On June 17 2025 6:52 PM For Laboratory #5<br>
                 Reserving the computers 10<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
+                
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -125,19 +165,19 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_BirdUp.html">
                   <div id="BirdUp" class="pfp_image">
                     <p>@BirdUp</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made reservation<br>
+                BirdUp made a reservation<br>
                 On June 18 2025 6:48 AM For Laboratory #3<br>
                 Reserving the computers 0,2<br>
                 For June 20, 2025 From 9:00 AM to 4:00 PM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -160,19 +200,21 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_PiiPoo.html">
                   <div id="PiiPoo" class="pfp_image" >
                     <p>@PiiPoo</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made a reservation<br>
+                PiiPoo made a reservation<br>
                 on June 17 2025 6:48 PM For Laboratory #5<br>
                 Reserving the computers 1,2,3<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
+                <img src="data/check.png">
+                <img src="data/cross.png">
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -199,19 +241,19 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_PiiPoo.html">
                   <div id="PiiPoo" class="pfp_image">
                     <p>@PiiPoo</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made an anonymous reservation<br>
+                PiiPoo made an anonymous reservation<br>
                 On June 17 2025 6:52 PM For Laboratory #5<br>
                 Reserving the computers 4<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -230,19 +272,19 @@
           
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_PiiPoo.html">
                   <div id="PiiPoo" class="pfp_image">
                     <p>@PiiPoo</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made reservation<br>
+                PiiPoo made reservation<br>
                 On June 18 2025 6:48 AM For Laboratory #3<br>
                 Reserving the computers 6,9<br>
                 For June 20, 2025 From 9:00 AM to 4:00 PM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -265,19 +307,19 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_Someone.html">
                   <div id="Someone" class="pfp_image">
                     <p>Someone</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made a reservation<br>
+                Someone made a reservation<br>
                 On June 17 2025 6:52 PM For Laboratory #2<br>
                 Reserving the computers 35<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -296,19 +338,21 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_xyz123.html">
                   <div id="xyz123" class="pfp_image" >
                     <p>@xyz123</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made a reservation<br>
+                xyz123 made a reservation<br>
                 on June 17 2025 6:48 PM For Laboratory #5<br>
                 Reserving the computers 11,12,13<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
+                <img src="data/check.png">
+                <img src="data/cross.png">
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -335,19 +379,19 @@
 
           <div class="view_slide">
             <div class="view_slide_top">
-                <a class="pfp" href="profile.html">
+                <a class="pfp" href="profile_xyz123.html">
                   <div id="xyz123" class="pfp_image">
                     <p>@xyz123</p>
                   </div>
                 </a>
               <div class="reservation_description">
-                You made an anonymous reservation<br>
+                xyz123 made a reservation<br>
                 On June 17 2025 6:52 PM For Laboratory #5<br>
                 Reserving the computers 14<br>
                 For June 20, 2025 From 10:00 AM to 11:00 AM<br>
               </div>
               <div class="reservation_options">
-                <a href="edit_reservation.html"><img src="data/wrench.png"></a>
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
               </div>
             </div>
             <div class="view_slide_bottom">
@@ -361,6 +405,37 @@
             </div>
             <div class="view_slide_bottom">
               <span class="approved">APPROVED</span>
+            </div>
+          </div>
+
+          <div class="view_slide">
+            <div class="view_slide_top">
+                <a class="pfp" href="profile_xyz123.html">
+                  <div id="xyz123" class="pfp_image">
+                    <p>@xyz123</p>
+                  </div>
+                </a>
+              <div class="reservation_description">
+                xyz123 made an anonymous reservation<br>
+                On June 17 2025 6:55 PM For Laboratory #5<br>
+                Reserving the computers 14<br>
+                For June 20, 2025 From 10:00 AM to 11:00 AM<br>
+              </div>
+              <div class="reservation_options">
+                <a href="edit_reservation_admin.html"><img src="data/wrench.png"></a>
+              </div>
+            </div>
+            <div class="view_slide_bottom">
+              <div class="box">
+                <p>Lab #5 - June 20 - 10:00 to 11:00</p>
+                <div class="computer">
+                  <div class="number">14</div>
+                  <div class="name"></div>
+                </div>
+              </div>
+            </div>
+            <div class="view_slide_bottom">
+              <span class="denied">DENIED</span>
             </div>
           </div>
 
