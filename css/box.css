@@ -181,8 +181,8 @@
 }
 
 .pfp{
-  background-color: var(--Mainclr);
-  background-image: url("../data/default-pfp.png");
+  margin-top: 5%;
+  margin-right: 5%;
   background-size: 100% 100%;
   width: 90px;
   border-radius:10px;
