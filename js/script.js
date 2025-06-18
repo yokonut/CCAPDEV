@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
+  const user_names = [
+    "PiiPoo",
+    "abc456",
+    "xyz123",
+    "Someone",
+    "BirdUp"
+  ];
+
   let currentLab = "1";
 
   function updateSeatStatus(labNumber) {
@@ -44,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
       let temp = seat.children;
       if (reserved.includes(seatNumber)) {
         seat.id = "reserved";
-        
-        temp[1].innerHTML = "<a href='profile.html'>@anon</a>";
+        var j = Math.floor(Math.random() * 5);
+        temp[1].innerHTML = "<a href='profile_" + user_names[j] + ".html'>" + user_names[j] +"</a>";
       } else if (inUse.includes(seatNumber)) {
         seat.id = "in-use";
         temp[1].innerHTML = "Occupied";

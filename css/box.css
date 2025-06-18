@@ -73,6 +73,14 @@
   background-color: #6A8977;
 }
 
+.box-buttons #Delete{
+  background-color: red;
+}
+
+.box-buttons #Delete:hover{
+  background-color: darkred;
+}
+
 .box-buttons button:hover {
   background-color: mediumseagreen;
 }
@@ -156,6 +164,7 @@
   display: flex;
   flex-direction: row-reverse;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .view_slide_bottom > .approved {
@@ -179,6 +188,7 @@
   border-radius:10px;
   text-align: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .pfp .pfp_image{
@@ -187,11 +197,16 @@
 }
 
 .pfp p{
-  font-size: 13px;
-  color: lightblue;
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px darkgrey;
   margin-top:auto;
   align-self: flex-end;
-  padding-top: 75px;
+  padding-top: 65px;
+}
+
+.pfp p:hover{
+  color:lightblue;
 }
 
 .box > p{
@@ -199,4 +214,39 @@
   margin-left: 10px;
   font-size: 15px;
   font-weight: bold;
+}
+
+#PiiPoo{
+    background-image: url("../data/PiiPoo.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#abc456{
+    background-image: url("../data/abc456.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#xyz123{
+    background-image: url("../data/xyz123.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#BirdUp{
+    background-image: url("../data/BirdUp.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#Someone{
+    background-image: url("../data/Someone.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 2px black solid;
 }
