@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const users = [
     { username: "yohan_ko@dlsu.edu.ph", password: "pass123" },
     { username: "marinas_carl@dlsu.edu.ph", password: "abc456" },
-    { username: "aglugub_jerome@dlsu.edu.ph", password: "hello789" },
+    { username: "aglugub_jerome@dlsu.edu.ph", password: "PiiPoo" },
     { username: "mansukhani_asanro@dlsu.edu.ph", password: "markzuckerburg" },
     { username: "barbaso_dean@dlsu.edu.ph", password: "noyourenot" }
   ];
