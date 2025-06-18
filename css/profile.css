@@ -42,6 +42,10 @@
 
 }
 
+.header > h2{
+    color:black;
+}
+
 .profile-pic{
     background-image:url('data/default-pfp.png');
     object-fit: contain;
