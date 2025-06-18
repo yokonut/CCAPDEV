@@ -1,11 +1,4 @@
-.selectable:hover {
-  background-color: #90ee90;
-}
 
-.selected {
-  background-color: dodgerblue !important;
-  color: white;
-}
 
 .links {
   display: flex;
@@ -17,60 +10,6 @@
   display: block;
   text-align: center;
   color: rgba(255, 255, 255, 0.647);
-}
-
-.box {
-  width: 90%;             /* responsive */
-  max-width: 1000px;      /* keeps it from being too wide */
-  margin: 30px auto;      /* centers horizontally */
-  background-color: rgb(253, 253, 253);
-  box-shadow: 0 0 10px;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box > .computer{
-  width: 90px;
-  height: 90px;
-  background-image: url("../data/computer-sprite.png");
-  background-size: 100% 100%;
-  display:block;
-}   
-
-.box #reserved{ 
-  background-image: url("../data/red.png");
-}
-
-.box #in-use{ 
-  background-image: url("../data/green.png");
-}
-
-.box > .computer > .number{
-  padding-top: 18%;
-  margin-left:auto;
-  width: 80%;
-  height: 52%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 4vh;
-  text-shadow: 1px 1px gray;
-  font-family: "Courier New";
-}
-
-.box > .computer > .name{ 
-  width: 80%;
-  text-align: center;
-  margin-left:auto;
-  font-size: 2vh;
-  color: black;
-  text-shadow: 1px 1px white;
-}
-
-.box img {
-  width: 60px;
-  height: 60px;
 }
 
 .links nav div{
@@ -126,145 +65,27 @@
   border-bottom: 3px inset var(--Mainclr);
 }
 
-.box-buttons{
-  display: flex;
-  justify-content: flex-end;
-  width: 90%;
-}
-
-.box-buttons button {
-  margin-left: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: seagreen;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.box-buttons #Clear{
-  background-color: #6A8977;
-}
-
-.box-buttons button:hover {
-  background-color: mediumseagreen;
-}
-
-.box-buttons #Clear:hover{
-  background-color: mediumseagreen;
-}
-
-#view_box{
-  width: 95%;             /* responsive */
-  max-width: 5000px; 
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.view_slide {
-  width: 47.5%;
-  background-color: var(--Subclr);;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.view_slide_top{
-  margin: 10px;
-  display: flex;
-}
-
-.reservation_description{
-  margin:5px;
+.table > p{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 75%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.reservation_options{
-  width: 30px;
-  display:flex;
-  flex-direction: column;
-}
-
-.reservation_options img{
-  width:30px;
-  height:30px;
-  border-radius: 100%;
-  align-self: flex-start;
-}
-
-.reservation_options img:hover{
-  background-color: var(--Mainclr);
+.table > img{
+  width:50%;
+  border-radius: 10px;
+  margin-left: 25%
 }
 
 
 
-.view_slide_bottom{
-  margin: 10px;
-  margin-top:0px;
-}
-
-.view_slide_bottom > .box{
-  margin: 0px;
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.view_slide_bottom > span{
-  font-size: 1.5em;
-  text-align: end;
-  margin-right:10px;
-  display: flex;
-  flex-direction: row-reverse;
-  font-weight: bold;
-}
-
-.view_slide_bottom > .approved {
-  color:GREEN;
-}
-
-.view_slide_bottom > .pending {
-  color:LIGHTGREY;
-}
 
 
-.view_slide_bottom > .denied{
-  color:RED;
-}
 
-.pfp{
-  background-color: var(--Mainclr);
-  background-image: url("../data/default-pfp.png");
-  background-size: 100% 100%;
-  width: 90px;
-  border-radius:10px;
-  text-align: center;
-  flex-direction: column;
-}
-
-.pfp .pfp_image{
-  width:90px;
-  height:90px;
-}
-
-.pfp p{
-  font-size: 13px;
-  color: lightblue;
-  margin-top:auto;
-  align-self: flex-end;
-  padding-top: 75px;
-}
-
-.box > p{
-  width:100%;
-  margin-left: 10px;
-  font-size: 15px;
-  font-weight: bold;
-}
 
 
 
