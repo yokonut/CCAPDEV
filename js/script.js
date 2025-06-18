@@ -155,12 +155,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const dateInput = document.getElementById("reservation-date");
-  if (dateInput) {
-    const today = new Date().toISOString().split("T")[0]; // format: YYYY-MM-DD
-    dateInput.value = today;
-  }
-});
-
 
